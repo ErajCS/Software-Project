@@ -1,0 +1,102 @@
+/* OtpScreen.css */
+
+.otp-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 40px;
+  background-color: #da6dc6;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.image-placeholder img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.otp-container h2 {
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+.otp-container p {
+  color: #555555;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.user-email {
+  font-weight: bold;
+  color: #333333;
+}
+
+.otp-inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.otp-inputs input {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  transition: border 0.3s ease;
+}
+
+.otp-inputs input:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+.resend-text {
+  font-size: 14px;
+  color: #555555;
+}
+
+.resend-link {
+  color: #4CAF50;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.resend-link:hover {
+  text-decoration: underline;
+}
+
+.verify-btn {
+  padding: 14px;
+  width: 100%;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.verify-btn:hover {
+  background-color: #45a049;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 480px) {
+  .otp-container {
+    margin: 40px 20px;
+    padding: 30px;
+  }
+
+  .otp-inputs input {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
