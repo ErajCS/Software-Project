@@ -85,10 +85,57 @@ input[type="text"] {
     border-radius: 5px;
     border: 1px solid gray;
 }
+/* Main Menu Category Container */
+.menu-category-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.menu-main-title {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Category Grid Container */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Creates a responsive grid */
+    gap: 50px;
+    padding: 0 20px;
+}
+
+/* Individual Category Card */
+.category-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Category Cards */
+.category-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Category Title Style */
+.category-card h2 {
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 8px;
+}
 
 /* Section Title */
 .section-title {
-    padding: 30px;
+    padding: 70px;
     margin: 80px auto;
     font-size: 30px;
     text-align: center;
@@ -100,7 +147,7 @@ input[type="text"] {
 
 /* Colors */
 .pink {
-    background: palevioletred;
+    background: coral;
 }
 
 .brown {
